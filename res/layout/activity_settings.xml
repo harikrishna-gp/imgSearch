@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity" >
+
+    <Spinner
+        android:id="@+id/clrSpnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clrTxt"
+        android:layout_toRightOf="@+id/imgSzTxt" />
+
+    <EditText
+        android:id="@+id/siteFlterEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/steFltrTxt"
+        android:layout_toRightOf="@+id/steFltrTxt"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/svBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="@string/saveBtn" />
+
+    <EditText
+        android:id="@+id/steFltrTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/svBtn"
+        android:layout_alignLeft="@+id/imgTypeTxt"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/siteFltrTxt" />
+
+    <EditText
+        android:id="@+id/clrTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgTypeSpn"
+        android:layout_alignLeft="@+id/imgSzTxt"
+        android:layout_marginBottom="19dp"
+        android:layout_toLeftOf="@+id/clrSpnr"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/clrFltr" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/imgTypeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clrTxt"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/imgTypeTxt" />
+
+    <EditText
+        android:id="@+id/imgSzTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clrSpnr"
+        android:layout_alignRight="@+id/svBtn"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/imgSzTxt" />
+
+    <Spinner
+        android:id="@+id/imgSzSpnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clrTxt"
+        android:layout_marginBottom="23dp"
+        android:layout_toRightOf="@+id/imgSzTxt"
+        android:gravity="left"
+        android:padding="10sp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/imgTypeSpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clrSpnr"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/settingsDispTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgSzSpnr"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="30"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/settings_disp_txt" />
+
+</RelativeLayout>

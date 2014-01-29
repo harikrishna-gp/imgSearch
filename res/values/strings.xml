@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Google Image Searcher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="srchBtnTxt">Search</string>
+    <string name="srchQryTxt">Type Here</string>
+    <string name="settingsTitleTxt">Advances search options</string>
+    <string name="imgSizeTxt">Image Size</string>
+    <string name="title_activity_image_display">Full Screen</string>
+    <string name="settings_disp_txt">Advanced Search Options</string>
+    <string name="imgSzTxt">Image Size</string>
+    <string name="saveBtn">Save</string>
+    <string name="clrFltr">Color Filter</string>
+    <string name="imgTypeTxt">Image Type</string>
+    <string name="siteFltrTxt">Site Filter</string>
+
+</resources>
